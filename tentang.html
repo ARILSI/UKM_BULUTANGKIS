@@ -1,0 +1,477 @@
+<!doctype html>
+
+<html class="light" lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Tentang Kami | UKM Bulu Tangkis UPS Tegal</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              surface: "#faf8ff",
+              "on-primary-fixed-variant": "#264191",
+              "outline-variant": "#c5c5d3",
+              "on-primary-container": "#90a8ff",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed": "#ffdbcb",
+              "surface-tint": "#4059aa",
+              tertiary: "#4b1c00",
+              "on-primary": "#ffffff",
+              "secondary-fixed": "#ffddb8",
+              "on-surface-variant": "#444651",
+              "surface-container-highest": "#e3e1e9",
+              "on-primary-fixed": "#00164e",
+              "secondary-container": "#fea619",
+              "on-secondary-fixed-variant": "#653e00",
+              "on-secondary-fixed": "#2a1700",
+              "inverse-surface": "#2f3036",
+              "primary-fixed": "#dce1ff",
+              "on-background": "#1a1b21",
+              "on-surface": "#1a1b21",
+              "surface-dim": "#dad9e1",
+              secondary: "#855300",
+              "inverse-on-surface": "#f1f0f7",
+              "on-secondary": "#ffffff",
+              error: "#ba1a1a",
+              "surface-container-low": "#f4f3fa",
+              "on-error-container": "#93000a",
+              "primary-container": "#1e3a8a",
+              "tertiary-fixed-dim": "#ffb691",
+              "surface-container": "#eeedf4",
+              "on-tertiary-fixed-variant": "#773205",
+              "on-secondary-container": "#684000",
+              "surface-variant": "#e3e1e9",
+              "error-container": "#ffdad6",
+              background: "#faf8ff",
+              "surface-container-high": "#e9e7ef",
+              "on-tertiary-container": "#f39461",
+              outline: "#757682",
+              "secondary-fixed-dim": "#ffb95f",
+              "on-error": "#ffffff",
+              "inverse-primary": "#b6c4ff",
+              "primary-fixed-dim": "#b6c4ff",
+              "surface-bright": "#faf8ff",
+              "on-tertiary-fixed": "#341100",
+              "tertiary-container": "#6e2c00",
+              primary: "#00236f",
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "0.5rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+            fontFamily: {
+              headline: ["Inter"],
+              body: ["Inter"],
+              label: ["Inter"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-surface text-on-background font-body flex flex-col min-h-screen"
+  >
+    <!-- TopAppBar -->
+    <header
+      class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-xl bg-white/70 dark:bg-slate-950/70"
+    >
+      <nav
+        class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto"
+      >
+        <div class="flex items-center gap-3">
+          <span
+            class="material-symbols-outlined text-blue-900 dark:text-blue-400 text-3xl"
+            >sports_tennis</span
+          >
+          <span
+            class="text-2xl font-black italic tracking-tighter text-blue-900 dark:text-blue-100 font-['Inter']"
+            >Klub Bulu Tangkis</span
+          >
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+          <a
+            class="text-slate-600 dark:text-slate-400 font-medium hover:text-amber-600 transition-colors duration-300 scale-105 active:scale-95 transition-transform"
+            href="index.html"
+            >Beranda</a
+          >
+          <a
+            class="text-blue-900 dark:text-blue-100 font-extrabold border-b-2 border-amber-600 hover:text-amber-600 transition-colors duration-300 scale-105 active:scale-95 transition-transform"
+            href="tentang.html"
+            >Sejarah</a
+          >
+          <a
+            class="text-slate-600 dark:text-slate-400 font-medium hover:text-amber-600 transition-colors duration-300 scale-105 active:scale-95 transition-transform"
+            href="#"
+            >Visi</a
+          >
+          <a
+            class="text-slate-600 dark:text-slate-400 font-medium hover:text-amber-600 transition-colors duration-300 scale-105 active:scale-95 transition-transform"
+            href="#"
+            >Misi</a
+          >
+          <a
+            class="text-slate-600 dark:text-slate-400 font-medium hover:text-amber-600 transition-colors duration-300 scale-105 active:scale-95 transition-transform"
+            href="kontak.html"
+            >Kontak</a
+          >
+        </div>
+        <button
+          onclick="window.location.href = 'index.html'"
+          class="px-8 py-4 bg-secondary-container text-on-secondary-container rounded-full font-bold text-lg hover:scale-105 transition-all shadow-xl"
+        >
+          menu
+        </button>
+      </nav>
+    </header>
+    <main class="flex-grow pt-20">
+      <!-- Hero Section -->
+      <section
+        class="relative h-[530px] flex items-center overflow-hidden bg-primary-container"
+      >
+        <div class="absolute inset-0 z-0">
+          <div
+            class="absolute inset-0 bg-gradient-to-tr from-primary via-primary/80 to-transparent z-10"
+          ></div>
+          <img
+            class="w-full h-full object-cover"
+            data-alt="dynamic action shot of a professional badminton shuttlecock flying over a pristine blue court with dramatic stadium lighting"
+            src="assets/shuttlecock.jpg"
+          />
+        </div>
+        <div class="relative z-20 max-w-7xl mx-auto px-6 w-full">
+          <div class="max-w-2xl">
+            <span
+              class="text-secondary-container font-label uppercase tracking-widest font-bold mb-4 block"
+              >Tentang Keunggulan Kami</span
+            >
+            <h1
+              class="text-white font-headline text-5xl md:text-7xl font-black -ml-1 leading-none tracking-tighter mb-6"
+            >
+              KEJAR <span class="text-secondary-container">SMASH</span> <br />
+              KEMENANGAN.
+            </h1>
+            <p
+              class="text-primary-fixed text-lg md:text-xl font-medium max-w-lg"
+            >
+              UKM Bulu Tangkis UPS Tegal lebih dari sekadar klub; ini adalah
+              warisan disiplin atletik dan kecemerlangan akademik.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- History Section -->
+      <section class="py-24 bg-surface">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7">
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-highest rounded-full mb-6"
+              >
+                <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                <span
+                  class="text-xs font-bold uppercase tracking-tighter text-on-surface-variant"
+                  >Est. 1980-an</span
+                >
+              </div>
+              <h2
+                class="text-4xl md:text-5xl font-black text-primary mb-8 tracking-tighter"
+              >
+                Warisan Bulu Tangkis UPS
+              </h2>
+              <div class="space-y-6 text-on-surface text-lg leading-relaxed">
+                <p>
+                  Didirikan berdasarkan prinsip-prinsip sportivitas perguruan
+                  tinggi, UKM Bulu Tangkis UPS Tegal dimulai sebagai perkumpulan
+                  kecil para penggemar di Universitas Pancasakti Tegal. Selama
+                  beberapa dekade, ia telah berkembang menjadi pusat bakat
+                  regional, secara konsisten menghasilkan atlet yang mendominasi
+                  sirkuit provinsi.
+                </p>
+                <p>
+                  Pertumbuhan kami ditandai bukan hanya oleh trofi, tetapi oleh
+                  komunitas yang telah kami bangun. Kami telah bertransformasi
+                  dari kelompok rekreasi menjadi organisasi berperforma tinggi
+                  yang mengintegrasikan penguasaan teknis dengan disiplin ketat
+                  yang diperlukan untuk kesuksesan akademik.
+                </p>
+              </div>
+            </div>
+            <div class="lg:col-span-5 relative">
+              <div
+                class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden relative group"
+              >
+                <img
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  data-alt="vintage style photograph of a classic indoor badminton wooden court with sunbeams filtering through high windows"
+                  src="assets/sejarah kejuaraan.jpg"
+                />
+                <div
+                  class="absolute bottom-6 left-6 right-6 p-6 glass-card rounded-lg border border-outline-variant/20"
+                >
+                  <span class="text-primary font-bold block text-sm"
+                    >SEJARAH KEJUARAAN</span
+                  >
+                  <span class="text-on-surface-variant text-xs"
+                    >Lebih dari 50+ Gelar Regional diraih dalam 40 tahun.</span
+                  >
+                </div>
+              </div>
+              <!-- Asymmetric Overlay Element -->
+              <div
+                class="hidden lg:block absolute -top-10 -right-10 w-32 h-32 bg-secondary-container rounded-full z-[-1] opacity-50"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Vision & Mission Bento Grid -->
+      <section class="py-24 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2
+              class="text-primary font-headline text-4xl font-black tracking-tighter mb-2"
+            >
+              Nilai Inti Kami
+            </h2>
+            <p class="text-on-surface-variant max-w-xl mx-auto">
+              Menumbuhkan keunggulan melalui pendekatan seimbang terhadap
+              atletik dan pengembangan karakter.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Vision Card -->
+            <div
+              class="md:col-span-2 bg-primary p-10 rounded-xl flex flex-col justify-between group hover:bg-on-primary-fixed-variant transition-colors duration-500"
+            >
+              <div>
+                <span
+                  class="material-symbols-outlined text-secondary-container text-5xl mb-6"
+                  >visibility</span
+                >
+                <h3 class="text-white text-3xl font-black mb-4 tracking-tight">
+                  Visi Kami
+                </h3>
+                <p class="text-primary-fixed text-xl leading-relaxed">
+                  Menjadi tolak ukur keunggulan olahraga universitas di Jawa
+                  Tengah, membina generasi pemain bulu tangkis kelas dunia yang
+                  memiliki integritas sebagai sarjana berprestasi tinggi.
+                </p>
+              </div>
+              <div class="mt-12 flex items-center gap-4">
+                <div class="h-1 w-20 bg-secondary-container"></div>
+                <span
+                  class="text-secondary-container text-xs font-bold tracking-widest uppercase"
+                  >Standar Global</span
+                >
+              </div>
+            </div>
+            <!-- Mission 1: Sportsmanship -->
+            <div
+              class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-shadow duration-500"
+            >
+              <span
+                class="material-symbols-outlined text-secondary text-4xl mb-6"
+                style="font-variation-settings: &quot;FILL&quot; 1"
+                >handshake</span
+              >
+              <h4 class="text-primary text-xl font-bold mb-3">Sportivitas</h4>
+              <p class="text-on-surface-variant text-sm">
+                Menjunjung tinggi tingkat etika dan rasa hormat terhadap lawan,
+                wasit, dan permainan itu sendiri.
+              </p>
+            </div>
+            <!-- Mission 2: Excellence -->
+            <div
+              class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-shadow duration-500"
+            >
+              <span
+                class="material-symbols-outlined text-secondary text-4xl mb-6"
+                style="font-variation-settings: &quot;FILL&quot; 1"
+                >verified</span
+              >
+              <h4 class="text-primary text-xl font-bold mb-3">Keunggulan</h4>
+              <p class="text-on-surface-variant text-sm">
+                Pengejaran tanpa henti terhadap kesempurnaan teknis dan
+                kecemerlangan taktis di setiap sesi latihan dan pertandingan.
+              </p>
+            </div>
+            <!-- Mission 3: Discipline -->
+            <div
+              class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-shadow duration-500"
+            >
+              <span
+                class="material-symbols-outlined text-secondary text-4xl mb-6"
+                style="font-variation-settings: &quot;FILL&quot; 1"
+                >timer</span
+              >
+              <h4 class="text-primary text-xl font-bold mb-3">Disiplin</h4>
+              <p class="text-on-surface-variant text-sm">
+                Membangun karakter melalui ketepatan waktu, komitmen, dan
+                ketangguhan mental seorang atlet yang berdedikasi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Chairperson Message -->
+      <section class="py-24 bg-surface">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="flex flex-col lg:flex-row gap-16 items-center">
+            <div class="lg:w-1/2">
+              <div class="relative">
+                <div
+                  class="absolute -inset-4 bg-secondary-container/20 rounded-xl -rotate-2"
+                ></div>
+                <img
+                  class="relative w-full rounded-xl object-cover shadow-2xl aspect-video"
+                  data-alt="high-quality group portrait of diverse athletic university students in professional sports jerseys standing together in a gymnasium"
+                  src="assets/kabinet tim.jpg"
+                />
+                <div
+                  class="absolute -bottom-6 -right-6 bg-primary p-6 rounded-lg text-white"
+                >
+                  <p class="font-black text-2xl italic tracking-tighter">
+                    Kabinet Tim 2024
+                  </p>
+                  <p
+                    class="text-xs uppercase tracking-widest text-primary-fixed"
+                  >
+                    Persatuan dalam Performa
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/2">
+              <span
+                class="material-symbols-outlined text-6xl text-secondary-container/30 mb-4"
+                >format_quote</span
+              >
+              <h2
+                class="text-4xl font-black text-primary mb-6 tracking-tighter"
+              >
+                Pesan dari Ketua
+              </h2>
+              <div
+                class="space-y-4 italic text-on-surface-variant text-lg leading-relaxed"
+              >
+                <p>
+                  "Di UKM Bulu Tangkis UPS Tegal, kami percaya bahwa shuttlecock
+                  mewakili lebih dari sekadar proyektil; ia mencerminkan
+                  terbangnya ambisi kami. Kabinet kami berdedikasi untuk
+                  menciptakan lingkungan profesional di mana setiap anggota
+                  dapat berkembang, baik mereka kompetitor berpengalaman atau
+                  pemula yang penuh semangat."
+                </p>
+                <p>
+                  "Kami adalah arsitek semangat. Misi kami adalah memastikan
+                  bahwa setiap mahasiswa yang bergabung dengan kami pergi tidak
+                  hanya dengan gerak kaki yang lebih baik, tetapi dengan pola
+                  pikir yang kuat yang siap menghadapi tantangan dunia
+                  profesional."
+                </p>
+              </div>
+              <div class="mt-8">
+                <p class="text-xl font-bold text-primary">Ketua UPS Tegal</p>
+                <p
+                  class="text-secondary font-medium uppercase text-sm tracking-widest"
+                >
+                  Kabinet Kepemimpinan
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-blue-950 dark:bg-black w-full mt-auto">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 py-12 max-w-7xl mx-auto"
+      >
+        <div>
+          <div class="text-lg font-bold text-white mb-4">
+            Klub Bulu Tangkis Universitas
+          </div>
+          <p class="text-slate-300 text-sm max-w-sm mb-6">
+            Mempromosikan prestise dan keunggulan atletik di jantung Universitas
+            Pancasakti Tegal.
+          </p>
+          <div class="flex gap-4">
+            <a
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-amber-500 transition-colors"
+              href="#"
+            >
+              <span class="material-symbols-outlined">public</span>
+            </a>
+            <a
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-amber-500 transition-colors"
+              href="#"
+            >
+              <span class="material-symbols-outlined">alternate_email</span>
+            </a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="flex flex-col gap-3">
+            <span
+              class="text-amber-500 dark:text-amber-400 font-['Inter'] text-sm tracking-wide uppercase font-semibold"
+              >Klub</span
+            >
+            <a
+              class="text-slate-300 text-sm hover:underline decoration-amber-500 underline-offset-4 opacity-80 hover:opacity-100"
+              href="tentang.html"
+              >Sejarah</a
+            >
+            <a
+              class="text-slate-300 text-sm hover:underline decoration-amber-500 underline-offset-4 opacity-80 hover:opacity-100"
+              href="#"
+              >Visi</a
+            >
+          </div>
+          <div class="flex flex-col gap-3">
+            <span
+              class="text-amber-500 dark:text-amber-400 font-['Inter'] text-sm tracking-wide uppercase font-semibold"
+              >Hubungkan</span
+            >
+            <a
+              class="text-slate-300 text-sm hover:underline decoration-amber-500 underline-offset-4 opacity-80 hover:opacity-100"
+              href="#"
+              >Misi</a
+            >
+            <a
+              class="text-slate-300 text-sm hover:underline decoration-amber-500 underline-offset-4 opacity-80 hover:opacity-100"
+              href="kontak.html"
+              >Kontak</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-8 pb-8 border-t border-white/10 pt-8">
+        <p
+          class="text-slate-300 font-['Inter'] text-xs tracking-wide uppercase font-semibold"
+        >
+          © 2024 Klub Bulu Tangkis Universitas. Atlet yang Bergengsi.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

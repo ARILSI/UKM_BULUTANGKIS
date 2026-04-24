@@ -1,0 +1,514 @@
+<!doctype html>
+
+<html class="light" lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface": "#1a1b21",
+              "surface-variant": "#e3e1e9",
+              "on-primary-fixed": "#00164e",
+              "inverse-surface": "#2f3036",
+              "on-tertiary": "#ffffff",
+              "on-error": "#ffffff",
+              "on-surface-variant": "#444651",
+              "surface-tint": "#4059aa",
+              "surface-container-low": "#f4f3fa",
+              "secondary-fixed": "#ffddb8",
+              "on-tertiary-container": "#f39461",
+              "on-secondary": "#ffffff",
+              "on-primary-fixed-variant": "#264191",
+              "primary-fixed": "#dce1ff",
+              "inverse-on-surface": "#f1f0f7",
+              "error-container": "#ffdad6",
+              "on-secondary-fixed-variant": "#653e00",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed-variant": "#773205",
+              "surface-dim": "#dad9e1",
+              "secondary-container": "#fea619",
+              background: "#faf8ff",
+              "surface-bright": "#faf8ff",
+              "primary-fixed-dim": "#b6c4ff",
+              "tertiary-container": "#6e2c00",
+              "on-tertiary-fixed": "#341100",
+              surface: "#faf8ff",
+              "tertiary-fixed-dim": "#ffb691",
+              tertiary: "#4b1c00",
+              "on-primary-container": "#90a8ff",
+              "inverse-primary": "#b6c4ff",
+              secondary: "#855300",
+              "surface-container": "#eeedf4",
+              primary: "#00236f",
+              "on-background": "#1a1b21",
+              "secondary-fixed-dim": "#ffb95f",
+              outline: "#757682",
+              "surface-container-high": "#e9e7ef",
+              "primary-container": "#1e3a8a",
+              "on-error-container": "#93000a",
+              "surface-container-highest": "#e3e1e9",
+              "on-secondary-fixed": "#2a1700",
+              "on-primary": "#ffffff",
+              "on-secondary-container": "#684000",
+              "tertiary-fixed": "#ffdbcb",
+              "outline-variant": "#c5c5d3",
+              error: "#ba1a1a",
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "0.5rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+            fontFamily: {
+              headline: ["Inter"],
+              body: ["Inter"],
+              label: ["Inter"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-surface text-on-surface flex flex-col min-h-screen">
+    <!-- TopAppBar -->
+    <header
+      class="sticky top-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-sm"
+    >
+      <div
+        class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4"
+      >
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-blue-900 text-3xl"
+            >sports_tennis</span
+          >
+          <h1 class="text-2xl font-black italic tracking-tighter text-blue-900">
+            Bulu Tangkis Universitas
+          </h1>
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+          <a
+            class="text-slate-600 font-medium hover:text-blue-800 transition-transform duration-200 hover:scale-105"
+            href="index.html"
+            >Beranda</a
+          >
+          <a
+            class="text-blue-900 border-b-2 border-amber-500 pb-1 font-bold"
+            href="berita.html"
+            >Berita</a
+          >
+          <a
+            class="text-slate-600 font-medium hover:text-blue-800 transition-transform duration-200 hover:scale-105"
+            href="#"
+            >Peringkat</a
+          >
+          <a
+            class="text-slate-600 font-medium hover:text-blue-800 transition-transform duration-200 hover:scale-105"
+            href="#"
+            >Galeri</a
+          >
+        </nav>
+        <button
+          onclick="window.location.href = 'gabung.html'"
+          class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:scale-105 transition-transform duration-200 active:scale-95"
+        >
+          Gabung Klub
+        </button>
+      </div>
+    </header>
+    <main class="flex-grow">
+      <!-- Hero Editorial Header -->
+      <section
+        class="relative overflow-hidden bg-primary-container py-16 md:py-24"
+      >
+        <div class="absolute inset-0 opacity-20">
+          <img
+            class="w-full h-full object-cover"
+            data-alt="shot dinamis dari kok bulu tangkis di udara dengan latar belakang gelap dan lampu sorot dramatis"
+            src="assets/shuttlecock bulu tangkis di udara dengan latar belakang gelap dan lampu sorot dramatis.jpg"
+          />
+        </div>
+        <div class="relative max-w-7xl mx-auto px-6">
+          <span
+            class="text-secondary-container font-bold tracking-widest uppercase text-sm block mb-4"
+            >Pembaruan Resmi</span
+          >
+          <h2
+            class="text-5xl md:text-7xl font-bold text-white tracking-tighter mb-6 max-w-3xl leading-[0.9]"
+          >
+            CATATAN <span class="text-secondary-container">KINETIK.</span>
+          </h2>
+          <p
+            class="text-primary-fixed text-lg md:text-xl max-w-2xl leading-relaxed"
+          >
+            Detak jantung UKM Bulu Tangkis UPS. Dari kejayaan kejuaraan hingga
+            latihan teknis di lapangan, tetap perbarui informasi Anda dengan
+            evolusi klub terbaru kami.
+          </p>
+        </div>
+      </section>
+      <!-- Content Grid -->
+      <section class="max-w-7xl mx-auto px-6 py-12">
+        <div class="flex flex-col lg:flex-row gap-12">
+          <!-- Main News List (Asymmetric Vertical Flow) -->
+          <div class="lg:w-2/3 space-y-12">
+            <!-- Tournament News Item -->
+            <article class="group">
+              <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div
+                  class="w-full md:w-2/5 aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-high"
+                >
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    data-alt="lapangan bulu tangkis profesional dalam ruangan dengan pencahayaan terang dan matras lantai biru"
+                    src="assets/tempat latihan bulu tangkis.jpg"
+                  />
+                </div>
+                <div class="w-full md:w-3/5">
+                  <div class="flex items-center gap-3 mb-4">
+                    <span
+                      class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold tracking-wider"
+                      >TURNAMEN</span
+                    >
+                    <time class="text-outline text-sm font-medium"
+                      >24 OKT, 2024</time
+                    >
+                  </div>
+                  <h3
+                    class="text-3xl font-bold text-on-surface mb-4 leading-tight group-hover:text-primary transition-colors"
+                  >
+                    Kejuaraan Pancasakti Open: Jalan Menuju Final Nasional
+                  </h3>
+                  <p class="text-on-surface-variant mb-6 leading-relaxed">
+                    Skuad elit kami bersiap untuk pertarungan regional yang
+                    paling dinanti. Jadwal terperinci dan pengungkapan bagan
+                    untuk University Open mendatang.
+                  </p>
+                  <a
+                    class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all duration-300"
+                    href="#"
+                  >
+                    Baca Selengkapnya
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <!-- Club Update News Item (Tonal Shift) -->
+            <article
+              class="p-8 rounded-xl bg-surface-container-low border-l-4 border-primary"
+            >
+              <div class="flex flex-col md:flex-row gap-8">
+                <div class="flex-grow">
+                  <div class="flex items-center gap-3 mb-4">
+                    <span
+                      class="bg-primary text-white px-3 py-1 rounded-full text-xs font-bold tracking-wider"
+                      >BERITA KLUB</span
+                    >
+                    <time class="text-outline text-sm font-medium"
+                      >20 OKT, 2024</time
+                    >
+                  </div>
+                  <h3
+                    class="text-2xl font-bold text-on-surface mb-4 leading-tight"
+                  >
+                    Fasilitas Pelatihan Performa Tinggi Baru Diresmikan
+                  </h3>
+                  <p class="text-on-surface-variant mb-6 leading-relaxed">
+                    Proyek ekspansi selesai saat kami menyambut empat lapangan
+                    premium tambahan dan zona analisis biomekanik khusus untuk
+                    penggunaan anggota.
+                  </p>
+                  <a
+                    class="inline-flex items-center gap-2 text-primary font-bold"
+                    href="#"
+                  >
+                    Lihat Galeri
+                    <span class="material-symbols-outlined">imagesmode</span>
+                  </a>
+                </div>
+                <div
+                  class="w-full md:w-48 aspect-square rounded-lg overflow-hidden shrink-0"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    data-alt="arena olahraga dalam ruangan modern dengan langit-langit tinggi dan barisan lapangan bulu tangkis profesional"
+                    src="assets/arena olahraga dalam ruangan modern.jpg"
+                  />
+                </div>
+              </div>
+            </article>
+            <!-- Tip News Item -->
+            <article class="group">
+              <div class="flex flex-col md:flex-row-reverse gap-8 items-center">
+                <div
+                  class="w-full md:w-2/5 aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-high"
+                >
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    data-alt="close-up tangan pemain bulu tangkis menggenggam raket dengan grip tape biru"
+                    src="assets/close-up tangan pemain bulu tangkis.jpg"
+                  />
+                </div>
+                <div class="w-full md:w-3/5">
+                  <div class="flex items-center gap-3 mb-4">
+                    <span
+                      class="bg-tertiary text-white px-3 py-1 rounded-full text-xs font-bold tracking-wider"
+                      >TIPS PRO</span
+                    >
+                    <time class="text-outline text-sm font-medium"
+                      >15 OKT, 2024</time
+                    >
+                  </div>
+                  <h3
+                    class="text-3xl font-bold text-on-surface mb-4 leading-tight group-hover:text-primary transition-colors"
+                  >
+                    Menguasai Backhand Clear: Kerusakan Rantai Kinetik
+                  </h3>
+                  <p class="text-on-surface-variant mb-6 leading-relaxed">
+                    Pelatih Aris menguraikan biomekanik di balik backhand yang
+                    sempurna. Tingkatkan jangkauan lapangan Anda tanpa
+                    mengorbankan tenaga.
+                  </p>
+                  <a
+                    class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all duration-300"
+                    href="#"
+                  >
+                    Tonton Video
+                    <span class="material-symbols-outlined">play_circle</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- Sidebar (Categorization & Featured) -->
+          <aside class="lg:w-1/3 space-y-12">
+            <!-- Tournament Ticker -->
+            <div class="bg-primary p-6 rounded-xl text-white">
+              <h4
+                class="text-sm font-bold tracking-widest text-secondary-container mb-4 uppercase"
+              >
+                Pertandingan Berikutnya
+              </h4>
+              <div class="flex justify-between items-center mb-6">
+                <div class="text-center">
+                  <div
+                    class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mb-2 mx-auto"
+                  >
+                    UPS
+                  </div>
+                  <span class="text-xs font-bold">UKM UPS</span>
+                </div>
+                <span class="text-2xl font-black italic">VS</span>
+                <div class="text-center">
+                  <div
+                    class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mb-2 mx-auto"
+                  >
+                    POL
+                  </div>
+                  <span class="text-xs font-bold">POLITEKNIK</span>
+                </div>
+              </div>
+              <div class="text-center border-t border-white/10 pt-4">
+                <p class="text-sm text-primary-fixed mb-1">
+                  Kualifikasi Regional
+                </p>
+                <p class="font-bold">Sab, 28 Okt • 09:00 AM</p>
+              </div>
+            </div>
+            <!-- Trending Topics (No-Divider List) -->
+            <div>
+              <h4
+                class="text-xl font-bold text-on-surface mb-6 border-b-2 border-secondary-container inline-block"
+              >
+                Kategori
+              </h4>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    class="flex justify-between items-center p-3 rounded-lg hover:bg-surface-container-low transition-colors group"
+                    href="#"
+                  >
+                    <span
+                      class="text-on-surface-variant font-medium group-hover:text-primary"
+                      >Persiapan Turnamen</span
+                    >
+                    <span
+                      class="text-xs bg-surface-container-highest px-2 py-1 rounded-full text-outline"
+                      >12</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="flex justify-between items-center p-3 rounded-lg hover:bg-surface-container-low transition-colors group"
+                    href="#"
+                  >
+                    <span
+                      class="text-on-surface-variant font-medium group-hover:text-primary"
+                      >Ulasan Peralatan</span
+                    >
+                    <span
+                      class="text-xs bg-surface-container-highest px-2 py-1 rounded-full text-outline"
+                      >08</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="flex justify-between items-center p-3 rounded-lg hover:bg-surface-container-low transition-colors group"
+                    href="#"
+                  >
+                    <span
+                      class="text-on-surface-variant font-medium group-hover:text-primary"
+                      >Sorotan Pemain</span
+                    >
+                    <span
+                      class="text-xs bg-surface-container-highest px-2 py-1 rounded-full text-outline"
+                      >15</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="flex justify-between items-center p-3 rounded-lg hover:bg-surface-container-low transition-colors group"
+                    href="#"
+                  >
+                    <span
+                      class="text-on-surface-variant font-medium group-hover:text-primary"
+                      >Acara Internal</span
+                    >
+                    <span
+                      class="text-xs bg-surface-container-highest px-2 py-1 rounded-full text-outline"
+                      >24</span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Newsletter Sign Up -->
+            <div class="bg-surface-container-highest p-8 rounded-xl">
+              <span class="material-symbols-outlined text-primary text-4xl mb-4"
+                >mail</span
+              >
+              <h4 class="text-xl font-bold mb-2">Berita Lapangan</h4>
+              <p class="text-on-surface-variant text-sm mb-6">
+                Dapatkan rutinitas pelatihan mingguan dan peringatan klub
+                langsung di kotak masuk Anda.
+              </p>
+              <div class="space-y-3">
+                <input
+                  class="w-full bg-surface px-4 py-3 rounded-lg border-b-2 border-outline focus:border-primary outline-none transition-colors"
+                  placeholder="Alamat Email"
+                  type="email"
+                />
+                <button
+                  class="w-full bg-primary text-white py-3 rounded-full font-bold hover:scale-[1.02] active:scale-[0.98] transition-all"
+                >
+                  Berlangganan Sekarang
+                </button>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full mt-auto bg-blue-900">
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-8 py-12"
+      >
+        <div>
+          <span
+            class="text-lg font-bold text-white uppercase tracking-widest block mb-4"
+            >UPS Badminton</span
+          >
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Mencetak juara melalui disiplin akademik dan keunggulan atletik
+            sejak 1998. Institusi bulu tangkis utama bagi atlet universitas.
+          </p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <span
+            class="text-amber-400 font-bold mb-2 uppercase text-xs tracking-tighter"
+            >Sumber Daya</span
+          >
+          <a
+            class="text-slate-400 hover:text-white transition-colors hover:underline decoration-amber-500 underline-offset-4"
+            href="berita.html"
+            >Berita</a
+          >
+          <a
+            class="text-slate-400 hover:text-white transition-colors hover:underline decoration-amber-500 underline-offset-4"
+            href="#"
+            >Galeri</a
+          >
+          <a
+            class="text-slate-400 hover:text-white transition-colors hover:underline decoration-amber-500 underline-offset-4"
+            href="#"
+            >Peringkat</a
+          >
+        </div>
+        <div class="flex flex-col gap-2">
+          <span
+            class="text-amber-400 font-bold mb-2 uppercase text-xs tracking-tighter"
+            >Legal</span
+          >
+          <a
+            class="text-slate-400 hover:text-white transition-colors hover:underline decoration-amber-500 underline-offset-4"
+            href="#"
+            >Kebijakan Privasi</a
+          >
+          <a
+            class="text-slate-400 hover:text-white transition-colors hover:underline decoration-amber-500 underline-offset-4"
+            href="kontak.html"
+            >Kontak</a
+          >
+          <div class="flex gap-4 mt-4">
+            <span
+              class="material-symbols-outlined text-slate-400 hover:text-amber-400 cursor-pointer"
+              >share</span
+            >
+            <span
+              class="material-symbols-outlined text-slate-400 hover:text-amber-400 cursor-pointer"
+              >public</span
+            >
+            <span
+              class="material-symbols-outlined text-slate-400 hover:text-amber-400 cursor-pointer"
+              >mail</span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto px-8 py-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <span class="text-slate-400 text-sm"
+          >© 2024 Klub Bulu Tangkis Universitas. Seluruh hak cipta dilindungi
+          undang-undang. Dibangun untuk para juara.</span
+        >
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+          <span
+            class="text-slate-300 text-xs font-bold uppercase tracking-widest"
+            >Musim Aktif</span
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
