@@ -1,2 +1,2 @@
 # UKM_BULUTANGKIS
-![alt text](?raw=true)
+![alt text](https://github.com/ARILSI/UKM_BULUTANGKIS/blob/main/assets/aksi%20turnamen.jpg?raw=true)
